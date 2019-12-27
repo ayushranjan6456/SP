@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Portfolio
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<ul class="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#about">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+<div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>  
+  </div>
+<div id="home">
+    <div class="bg-text">HELLO! I AM <span class="name">AYUSH RANJAN</span><wbr>A WEB DESIGNING ENTHUSIAST</div>
+</div>
+<div id="about">
+    <div class="left">
+        <span class="title">About:</span>
+        <ul type="square" class="about-list">
+            <li>Birthday : 08/01/2002</li>
+            <li>Hometown: Jamshedpur</li>
+            <li>Studied at St. Mary's English High School, Jamshedpur [2006-2017]</li>
+            <li>Studied at DAV Public School, Bistupur [2017-2019]</li>
+            <li>Currently Pursuing B. Tech in Electronics and Communication Engineering from VIT, Vellore [2019-2023]</li>
+        </ul>
+    </div>
+    <div class="right">
+        <span class="title">Experience:</span>
+        <ul type="square" class="exp-list">
+            <li>Fluent with the use of HTML and CSS, worked for the Science Club- Antagyah and designed a website for the same.</li>
+            <li>Familiar with the use of JavaScript and have the knowledge about the basics of Jquery</li>
+            <li>Worked with basic electronic sensors such as the Ultrasonic sensor, IR sensor, motor driver, accelerometer</li>
+            <li>Made projects in the electronics field such as - 'an obstacle avoiding bot' </li>
+        </ul>
+    </div>
+    <div id="contact">
+        <div class="contact"> 
+            <ul class="social-network social-circle">
+                <li><a href="*"  title="Facebook" target="_blank"><img src="assets/fb.png" class="ico"></a></li>
+                <li><a href="https://www.linkedin.com/in/ayush-ranjan-485180190/"  title="LinkedIn"><img src="assets/in.png" class="ico"></a></li>
+                <li><a href="https://github.com/ayushranjan6456" title="Github"><img src="assets/githb.png" class="ico"></a></li>
+                <li><a href="#" title="Google +"><img src="assets/gp.png" class="ico"></a></li>
+             </ul>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+
+</body>
+</html>
